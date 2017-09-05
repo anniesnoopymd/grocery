@@ -77,5 +77,23 @@
     <button id="submit" type="submit">算帳</button>
   </form>
 </div>
+<script>
+$(document).ready(function(){
+
+ var buy_array = new Array();
+
+ $('#wrap li').click(function(){
+    var thisID = $(this).attr('id');
+    var itemName = $(this).find('div .name').html();
+    var itemPrice = $(this).find('div .price').html();
+
+    $(this).click(function(){
+       $(".cart_info").append("<div class='item_info' name='" + itemName + "' price='" + itemPrice + "'>" + itemName + "<span class='info_price'>" + itemPrice + "</span></div>");
+    });
+    });
+});
+
+
+</script>
 </body>
 </html>
