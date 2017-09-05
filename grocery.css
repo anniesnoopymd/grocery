@@ -1,0 +1,89 @@
+.title {
+  background-color: #ffcc22;
+  width: 350px;
+  height: 140px;
+  margin: 50px;
+  padding: 20px;
+}
+
+.word {
+  font-size: 40px;
+  font-weight: bold;
+  height: 70px;
+  text-align: center;
+  vertical-align: center;
+  background-color: #FF0000;
+  padding-top: 10px;
+}
+
+.sub {
+  text-align: center;
+  background-color: #003377;
+  height: 30px;
+  color: white;
+  padding: 5px 0px 10px 0px;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  background-color: #99BBFF;
+  padding: 10px 10px 10px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  padding: 5px 20px 5px 25px;
+}
+
+.detail {
+  margin: 10px 10px 2px 10px;
+}
+
+.name {
+  background-color: #444444;
+  color: white;
+  padding: 5px 15px;
+  border-left: 4px solid #FFAA33;
+}
+
+.price {
+  background-color: #fff;
+  padding: 5px 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.total_word {
+  font-size: 20px;
+  color: black;
+  width: 70px;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+#left_bar {
+  margin-top: -800px;
+  margin-left: 600px;
+}
+
+.cart_total {
+  width: 200px;
+  background-color: #f24;
+  padding: 10px;
+}
+
+button {
+  background-color: #ffcc22;
+  margin-top: 20px;
+  border: 2px solid #000;
+  padding: 5px;
+}
