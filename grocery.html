@@ -79,19 +79,37 @@
 </div>
 <script>
 $(document).ready(function(){
+   var count_click_time = 0;
+   $('li').each(function() {
+      var count_click_time = 0;
 
- var buy_array = new Array();
+      $(this).click(function(){
+         var click_id = $(this).attr('id');
+         var itemName = $(this).find('div .name').html();
+         var itemPrice = $(this).find('div .price').html();
+         count_click_time++;
+         if(count_click_time == 1){
+            $(".cart_info").append("<div id='" + click_id + "'class='item_info' name='" + itemName + "' price='" + itemPrice + "'>" + itemName + "<span class='info_price'>" + itemPrice + "</span><span class='quantity'>" + count_click_time + "</span><span class='glyphicon glyphicon-trash'></span></div>");
+         }
+          else{
+             console.log(count_click_time);
+             $(this).find('.cart_info span .quantity').text(count_click_time);
 
- $('#wrap li').click(function(){
-    var thisID = $(this).attr('id');
-    var itemName = $(this).find('div .name').html();
-    var itemPrice = $(this).find('div .price').html();
+          }
+      });
+   });
+//    $('ul li').on('click', function() {
+//       var click_id = $(this).attr('id');
+//       var itemName = $(this).find('div .name').html();
+//       var itemPrice = $(this).find('div .price').html();
+//       console.log(itemName, itemPrice);
+// });
+   // console.log($('ul li').children().length);
 
-    $(this).click(function(){
-       $(".cart_info").append("<div class='item_info' name='" + itemName + "' price='" + itemPrice + "'>" + itemName + "<span class='info_price'>" + itemPrice + "</span></div>");
-    });
-    });
 });
+
+
+
 
 
 </script>
