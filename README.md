@@ -1,4 +1,4 @@
-# grocery
+# grocery store
 Dynamic buy list by jQuery
 
 
