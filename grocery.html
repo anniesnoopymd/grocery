@@ -4,114 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script type = "text/javascript" src = "jquery.livequery.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="grocery.css">
-  <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
-  <title>Document</title>
+  <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet"></script>
+  <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/livequery/1.1.1/jquery.livequery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Dymatic Buylist</title>
 
 </head>
 <body>
 
-<div class="title">
-  <div class="word">宇婷雜貨店</div>
-  <div class="sub">老闆娘很兇，但很正</div>
-</div>
-<div align="left">
-  <div id="wrap" align="left">
-    <ul>
-      <li id="1"><img src="https://image.flaticon.com/icons/svg/199/199636.svg" alt=""/>
-        <div class="detail"><span class="name">堡包</span><span class="price">$45</span></div>
-      </li>
-      <li id="2"><img src="https://image.flaticon.com/icons/svg/362/362290.svg" alt=""/>
-        <div class="detail"><span class="name">薯叔</span><span class="price">$42</span></div>
-      </li>
-      <li id="3"><img src="https://image.flaticon.com/icons/svg/415/415744.svg" alt=""/>
-        <div class="detail"><span class="name">纖維</span><span class="price">$42 </span></div>
-      </li>
-    </ul>
-    <ul>
-      <li id="4"><img src="https://image.flaticon.com/icons/svg/135/135659.svg" alt=""/>
-        <div class="detail"><span class="name">壽司</span><span class="price">$45</span></div>
-      </li>
-      <li id="5"><img src="https://image.flaticon.com/icons/svg/432/432371.svg" alt=""/>
-        <div class="detail"><span class="name">蛋糕</span><span class="price">$21</span></div>
-      </li>
-      <li id="6"><img src="https://image.flaticon.com/icons/svg/135/135578.svg" alt=""/>
-        <div class="detail"><span class="name">杯子</span><span class="price">$30</span></div>
-      </li>
-    </ul>
-    <ul>
-      <li id="7"><img src="https://image.flaticon.com/icons/svg/135/135661.svg" alt=""/>
-        <div class="detail"><span class="name">串燒</span><span class="price">$20</span></div>
-      </li>
-      <li id="8"><img src="https://image.flaticon.com/icons/svg/179/179272.svg" alt=""/>
-        <div class="detail"><span class="name">哈逗</span><span class="price">$36</span></div>
-      </li>
-      <li id="9"><img src="https://image.flaticon.com/icons/svg/527/527704.svg" alt=""/>
-        <div class="detail"><span class="name">鹹派</span><span class="price">$49</span></div>
-      </li>
-    </ul>
-    <ul>
-      <li id="10"><img src="https://image.flaticon.com/icons/svg/135/135644.svg" alt=""/>
-        <div class="detail"><span class="name">比薩</span><span class="price">$32</span></div>
-      </li>
-      <li id="11"><img src="https://image.flaticon.com/icons/svg/546/546776.svg" alt=""/>
-        <div class="detail"><span class="name">明治</span><span class="price">$17</span></div>
-      </li>
-      <li id="12"><img src="https://image.flaticon.com/icons/svg/454/454579.svg" alt=""/>
-        <div class="detail"><span class="name">鬆餅</span><span class="price">$47</span></div>
-      </li>
-    </ul>
+  <div class="title">
+    <div class="word">宇婷雜貨店</div>
+    <div class="sub">老闆娘很兇，但很正</div>
   </div>
-</div><br clear="all"/>
-<div id="left_bar">
-  <form id="cart_form" action="#" name="cart_form">
-    <div class="total">
-      <div class="total_word">結帳</div>
+  <div align="left">
+    <div id="wrap" align="left">
+      <ul>
+        <li id="1"><img src="https://image.flaticon.com/icons/svg/199/199636.svg" alt=""/>
+          <div class="detail"><span class="name">Burger</span><span class="price" data-price="45">$45</span></div>
+        </li>
+        <li id="2"><img src="https://image.flaticon.com/icons/svg/362/362290.svg" alt=""/>
+          <div class="detail"><span class="name">Fries</span><span class="price" data-price="42">$42</span></div>
+        </li>
+        <li id="3"><img src="https://image.flaticon.com/icons/svg/415/415744.svg" alt=""/>
+          <div class="detail"><span class="name">Salad</span><span class="price" data-price="33">$33</span></div>
+        </li>
+      </ul>
+      <ul>
+        <li id="4"><img src="https://image.flaticon.com/icons/svg/135/135659.svg" alt=""/>
+          <div class="detail"><span class="name">Sushi</span><span class="price" data-price="45">$45</span></div>
+        </li>
+        <li id="5"><img src="https://image.flaticon.com/icons/svg/432/432371.svg" alt=""/>
+          <div class="detail"><span class="name">Cake</span><span class="price" data-price="21">$21</span></div>
+        </li>
+        <li id="6"><img src="https://image.flaticon.com/icons/svg/135/135578.svg" alt=""/>
+          <div class="detail"><span class="name">Cupcake</span><span class="price" data-price="30">$30</span></div>
+        </li>
+      </ul>
+      <ul>
+        <li id="7"><img src="https://image.flaticon.com/icons/svg/135/135661.svg" alt=""/>
+          <div class="detail"><span class="name">BBQ</span><span class="price" data-price="20">$20</span></div>
+        </li>
+        <li id="8"><img src="https://image.flaticon.com/icons/svg/179/179272.svg" alt=""/>
+          <div class="detail"><span class="name">Hotdog</span><span class="price" data-price="36">$36</span></div>
+        </li>
+        <li id="9"><img src="https://image.flaticon.com/icons/svg/527/527704.svg" alt=""/>
+          <div class="detail"><span class="name">Pie</span><span class="price" data-price="49">$49</span></div>
+        </li>
+      </ul>
+      <ul>
+        <li id="10"><img src="https://image.flaticon.com/icons/svg/135/135644.svg" alt=""/>
+          <div class="detail"><span class="name">Pizza</span><span class="price" data-price="32">$32</span></div>
+        </li>
+        <li id="11"><img src="https://image.flaticon.com/icons/svg/546/546776.svg" alt=""/>
+          <div class="detail"><span class="name">Sandwich</span><span class="price" data-price="17">$17</span></div>
+        </li>
+        <li id="12"><img src="https://image.flaticon.com/icons/svg/454/454579.svg" alt=""/>
+          <div class="detail"><span class="name">Pancake</span><span class="price" data-price="47">$47</span></div>
+        </li>
+      </ul>
     </div>
-    <div class="cart_info"></div>
-    <div class="cart_total"><b>Total Charges $</b><span>0</span>
-      <input id="total-hidden-charges" type="hidden" name="total-hidden-charges" value="0"/>
-    </div>
-    <button id="submit" type="submit">算帳</button>
-  </form>
-</div>
-<script>
-$(document).ready(function(){
-   var count_click_time = 0;
-   $('li').each(function() {
-      var count_click_time = 0;
-
-      $(this).click(function(){
-         var click_id = $(this).attr('id');
-         var itemName = $(this).find('div .name').html();
-         var itemPrice = $(this).find('div .price').html();
-         count_click_time++;
-         if(count_click_time == 1){
-            $(".cart_info").append("<div id='" + click_id + "'class='item_info' name='" + itemName + "' price='" + itemPrice + "'>" + itemName + "<span class='info_price'>" + itemPrice + "</span><span class='quantity'>" + count_click_time + "</span><span class='glyphicon glyphicon-trash'></span></div>");
-         }
-          else{
-             console.log(count_click_time);
-             $(this).find('.cart_info span .quantity').text(count_click_time);
-
-          }
-      });
-   });
-//    $('ul li').on('click', function() {
-//       var click_id = $(this).attr('id');
-//       var itemName = $(this).find('div .name').html();
-//       var itemPrice = $(this).find('div .price').html();
-//       console.log(itemName, itemPrice);
-// });
-   // console.log($('ul li').children().length);
-
-});
-
-
-
-
-
-</script>
+  </div><br clear="all"/>
+  <div id="left_bar">
+    <form id="cart_form" action="#" name="cart_form">
+      <div class="total">
+        <div class="total_word">Buylist</div>
+      </div>
+      <div class="cart_info"></div>
+      <div class="cart_total"><b>Total Charges $</b><span class="total_price">0</span>
+        <input id="total-hidden-charges" type="hidden" name="total-hidden-charges" value="0"/>
+      </div>
+      <div class="submit">算帳</div>
+    </form>
+  </div>
+  <script src="grocery.js"></script>
 </body>
 </html>
